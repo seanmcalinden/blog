@@ -3,8 +3,5 @@ layout: default
 title: "Happy Jekylling!"
 ---
 
-## You're ready to go!
+<a href="{{site.baseurl}}/categories/networking">Networking</a>
 
-
-
-Start developing your Jekyll website.

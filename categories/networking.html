@@ -1,0 +1,9 @@
+---
+layout: default
+permalink: /categories/networking
+title: Networking
+---
+<h1>Networking</h1>
+{% for post in site.categories.Networking %}
+ <li><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}

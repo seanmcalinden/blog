@@ -7,7 +7,25 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/site.css">
   </head>
   <body>  
-    {{ content }}
-    <div class="text-center text-red-500 text-2xl">Hello World</div>
+
+    <nav class="bg-slate-800 w-full h-[60px] flex items-center p-4">
+
+      <div>
+        <a href="{{ site.baseurl }}/" class="text-white flex flex-row items-center">
+          <img src="{{ site.baseurl }}/assets/images/logo.png" alt="Logo" class="h-[50px] mr-2">
+        </a>
+      </div>
+    </nav>
+    <main class="p-4">
+      {{ content }}
+    </main>
+    
+    <!-- <ul>
+      {% for post in site.posts %}
+        <li>
+          <a class="text-center text-red-500 text-2xl" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul> -->
   </body>
 </html>
